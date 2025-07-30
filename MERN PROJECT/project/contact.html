@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+   
+<!--NAVBAR 1-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-body" data-bs-theme="dark">
+      
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MEDIX HEATHCARE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contact.html">Contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<link rel="stylesheet" href="contact.css">
+<h2 style="font-family:m;">Get in touch</h2>
+
+<div class="contact-form-inner">
+        <ul class="common-tabs contact-form-tabs">
+          <li data-tab="feedback" class="">Feedback/ Complaints</li>
+          <li data-tab="query" class="current">Queries</li>
+        </ul>
+      <div class="common-tabs-outer contact-form-tabs-outer">
+        <ul id="feedback" class="common-tabs-content">
+          <li>
+          <div class="form-outer">
+            <div class="query-form">
+              <form class="feedback-form" data-drupal-selector="feedback-form" action="/contact-us" method="post" id="feedback-form" accept-charset="UTF-8">
+  <div class="wrap-feedback-type"><div class="js-form-item form-item js-form-type-select form-item-feedback-type js-form-item-feedback-type">
+      <label class="form-required" for="edit-feedback-type">Type of Feedback</label>
+        <select data-drupal-selector="edit-feedback-type" id="edit-feedback-type" name="feedback_type" class="form-select"><option value="0">Select Type of Feedback</option><option value="Complaints">Complaints</option><option value="Compliments">Compliments</option></select>
+        </div>
+<div class="error" id="feedback-type"></div></div><div class="wrap-first-name"><div class="js-form-item form-item js-form-type-textfield form-item-first-name js-form-item-first-name">
+      <label class="form-required" for="edit-first-name">First Name</label>
+        <input data-drupal-selector="edit-first-name" type="text" id="edit-first-name" name="first_name" value="" size="60" maxlength="20" class="form-text">
+
+        </div>
+<div class="error" id="first-name"></div></div><div class="wrap-last-name"><div class="js-form-item form-item js-form-type-textfield form-item-last-name js-form-item-last-name">
+      <label class="form-required" for="edit-last-name">Last Name</label>
+        <input data-drupal-selector="edit-last-name" type="text" id="edit-last-name" name="last_name" value="" size="60" maxlength="20" class="form-text">
+
+        </div>
+<div class="error" id="last-name"></div></div><div class="wrap-field-contact"><div class="js-form-item form-item js-form-type-tel form-item-country-code js-form-item-country-code form-disabled">
+      <label for="edit-country-code">Country Code</label>
+        <input data-drupal-selector="edit-country-code" disabled="disabled" type="tel" id="edit-country-code" name="country_code" value="+91" size="30" maxlength="3" class="form-tel">
+
+        </div>
+<div class="js-form-item form-item js-form-type-tel form-item-phone-number js-form-item-phone-number">
+      <label class="form-required" for="edit-phone-number">Mobile Number</label>
+        <input data-drupal-selector="edit-phone-number" type="tel" id="edit-phone-number" name="phone_number" value="" size="30" maxlength="10" class="form-tel">
+
+        </div>
+<div class="error" id="phone-number"></div></div><div class="wrap-email"><div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
+      <label class="form-required" for="edit-email">Email</label>
+        <input data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="35" maxlength="254" class="form-email">
+
+        </div>
+<div class="error" id="email"></div></div><div class="wrap-hospital-code"><div class="js-form-item form-item js-form-type-select form-item-hospital-code js-form-item-hospital-code">
+      <label class="form-required" for="edit-hospital-code">Hospitals</label>
+        <select data-drupal-selector="edit-hospital-code" id="edit-hospital-code" name="hospital_code" class="form-select"><option value="0">Select Hospital</option><option value="1123">Fortis Cancer Institute, Defence Colony, New Delhi</option><option value="1401">Fortis CDOC, Chirag Enclave, New Delhi</option><option value="1201">Fortis Escorts Heart Institute, New Delhi</option><option value="1106">Fortis Escorts Hospital, Amritsar</option><option value="1105">Fortis Escorts Hospital, Faridabad</option><option value="1102">Fortis Escorts Hospital, Jaipur</option><option value="1301">Fortis Flt. Lt. Rajan Dhall Hospital, Vasant Kunj</option><option value="4001">Fortis Hospital - Greater Noida</option><option value="1117">Fortis Hospital &amp; Kidney Institute, Gariahat, Kolkata</option><option value="1113">Fortis Hospital BG Road Bangalore</option><option value="1114">Fortis Hospital CG Road Bangalore</option><option value="3802">Fortis Hospital Mall Road, Ludhiana</option><option value="1116">Fortis Hospital, Anandpur, Kolkata</option><option value="1119">Fortis Hospital, Kalyan, Mumbai</option><option value="1110">Fortis Hospital, Ludhiana</option><option value="1013">Fortis Hospital, Manesar, Gurugram</option><option value="1002">Fortis Hospital, Mohali</option><option value="1115">Fortis Hospital, Mulund, Mumbai</option><option value="1104">Fortis Hospital, Noida</option><option value="3707">Fortis Hospital, Rajajinagar, Bengaluru</option><option value="1003">Fortis Hospital, Shalimar Bagh, New Delhi</option><option value="1103">Fortis La Femme, Greater Kailash II, New Delhi</option><option value="1111">Fortis Memorial Research Institute, Gurgaon</option><option value="3903">Fortis Nagarbhavi Bangalore</option><option value="1501">Hiranandani Fortis Hospital, Vashi, Mumbai</option><option value="10004">S L Raheja Hospital, Mumbai</option></select>
+        </div>
+<div class="error" id="hospital-code"></div></div><div class="wrap-feedback"><div class="js-form-item form-item js-form-type-textarea form-item-feedback js-form-item-feedback">
+      <label for="edit-feedback">Feedback</label>
+        <div>
+  <textarea data-drupal-selector="edit-feedback" id="edit-feedback" name="feedback" rows="8" cols="60" class="form-textarea"></textarea>
+</div>
+
+        </div>
+<div id="comment-message"></div></div><input data-drupal-selector="edit-feedback-submit" type="submit" id="edit-feedback-submit" name="op" value="Submit" class="button js-form-submit form-submit" data-once="drupal-ajax">
+<input autocomplete="off" data-drupal-selector="form-jnzgrknsgn5swng073gx2zi2d5bpvjqzy5arrks0vci" type="hidden" name="form_build_id" value="form-jNZgRKnsGn5Swng073gX2Zi2d5bpvjqzy5arrKS0vCI">
+<input data-drupal-selector="edit-feedback-form" type="hidden" name="form_id" value="feedback_form">
+<div class="messages-status"></div>
+</form>
+
+            </div>
+          </div>
+          </li>
+        </ul>
+
+        <ul id="query" class="common-tabs-content current">
+        <li>
+          <div class="form-outer">
+            <div class="query-form">
+              <form class="query-form" data-drupal-selector="query-form" action="/contact-us" method="post" id="query-form" accept-charset="UTF-8">
+  <div class="wrap-query-type"><div class="js-form-item form-item js-form-type-select form-item-query-type js-form-item-query-type">
+      <label class="form-required" for="edit-query-type">Type of Query</label>
+        <select data-drupal-selector="edit-query-type" id="edit-query-type" name="query_type" class="form-select"><option value="0">Select Type of Query</option><option value="Appointment">Appointment</option><option value="Enquiry">Enquiry</option><option value="Doctor opinion">Doctor opinion</option><option value="Request for surgery estimate">Request for surgery estimate</option><option value="Others">Others</option></select>
+        </div>
+<div class="error" id="query-type"></div></div><div class="wrap-first-name"><div class="js-form-item form-item js-form-type-textfield form-item-first-name js-form-item-first-name">
+      <label class="form-required" for="edit-first-name--2">First Name</label>
+        <input data-drupal-selector="edit-first-name" type="text" id="edit-first-name--2" name="first_name" value="" size="60" maxlength="20" class="form-text">
+
+        </div>
+<div class="error" id="first-name"></div></div><div class="wrap-last-name"><div class="js-form-item form-item js-form-type-textfield form-item-last-name js-form-item-last-name">
+      <label class="form-required" for="edit-last-name--2">Last Name</label>
+        <input data-drupal-selector="edit-last-name" type="text" id="edit-last-name--2" name="last_name" value="" size="60" maxlength="20" class="form-text">
+
+        </div>
+<div class="error" id="last-name"></div></div><div class="wrap-field-contact"><div class="js-form-item form-item js-form-type-tel form-item-country-code js-form-item-country-code form-disabled">
+      <label for="edit-country-code--2">Country Code</label>
+        <input data-drupal-selector="edit-country-code" disabled="disabled" type="tel" id="edit-country-code--2" name="country_code" value="+91" size="30" maxlength="3" class="form-tel">
+
+        </div>
+<div class="js-form-item form-item js-form-type-tel form-item-phone-number js-form-item-phone-number">
+      <label class="form-required" for="edit-phone-number--2">Mobile Number</label>
+        <input data-drupal-selector="edit-phone-number" type="tel" id="edit-phone-number--2" name="phone_number" value="" size="30" maxlength="10" class="form-tel">
+
+        </div>
+<div class="error" id="phone-number"></div></div><div class="wrap-email"><div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
+      <label class="form-required" for="edit-email--2">Email</label>
+        <input data-drupal-selector="edit-email" type="email" id="edit-email--2" name="email" value="" size="35" maxlength="254" class="form-email">
+
+        </div>
+<div class="error" id="email"></div></div><div class="wrap-hospital-code"><div class="js-form-item form-item js-form-type-select form-item-hospital-code js-form-item-hospital-code">
+      <label class="form-required" for="edit-hospital-code--2">Hospitals</label>
+        <select data-drupal-selector="edit-hospital-code" id="edit-hospital-code--2" name="hospital_code" class="form-select"><option value="0">Select Hospital</option><option value="1123">Fortis Cancer Institute, Defence Colony, New Delhi</option><option value="1401">Fortis CDOC, Chirag Enclave, New Delhi</option><option value="1201">Fortis Escorts Heart Institute, New Delhi</option><option value="1106">Fortis Escorts Hospital, Amritsar</option><option value="1105">Fortis Escorts Hospital, Faridabad</option><option value="1102">Fortis Escorts Hospital, Jaipur</option><option value="1301">Fortis Flt. Lt. Rajan Dhall Hospital, Vasant Kunj</option><option value="4001">Fortis Hospital - Greater Noida</option><option value="1117">Fortis Hospital &amp; Kidney Institute, Gariahat, Kolkata</option><option value="1113">Fortis Hospital BG Road Bangalore</option><option value="1114">Fortis Hospital CG Road Bangalore</option><option value="3802">Fortis Hospital Mall Road, Ludhiana</option><option value="1116">Fortis Hospital, Anandpur, Kolkata</option><option value="1119">Fortis Hospital, Kalyan, Mumbai</option><option value="1110">Fortis Hospital, Ludhiana</option><option value="1013">Fortis Hospital, Manesar, Gurugram</option><option value="1002">Fortis Hospital, Mohali</option><option value="1115">Fortis Hospital, Mulund, Mumbai</option><option value="1104">Fortis Hospital, Noida</option><option value="3707">Fortis Hospital, Rajajinagar, Bengaluru</option><option value="1003">Fortis Hospital, Shalimar Bagh, New Delhi</option><option value="1103">Fortis La Femme, Greater Kailash II, New Delhi</option><option value="1111">Fortis Memorial Research Institute, Gurgaon</option><option value="3903">Fortis Nagarbhavi Bangalore</option><option value="1501">Hiranandani Fortis Hospital, Vashi, Mumbai</option><option value="10004">S L Raheja Hospital, Mumbai</option></select>
+        </div>
+<div class="error" id="hospital-code"></div></div><div class="wrap-query"><div class="js-form-item form-item js-form-type-textarea form-item-query js-form-item-query">
+      <label for="edit-query">Query</label>
+        <div>
+  <textarea data-drupal-selector="edit-query" id="edit-query" name="query" rows="8" cols="60" class="form-textarea"></textarea>
+</div>
+
+        </div>
+<div id="comment-message"></div></div><input data-drupal-selector="edit-query-submit" type="submit" id="edit-query-submit" name="op" value="Submit" class="button js-form-submit form-submit" data-once="drupal-ajax">
+<input autocomplete="off" data-drupal-selector="form-h4aaw2hwekdxtrb3upwmsslb202pfyukk78li-eb5a" type="hidden" name="form_build_id" value="form-h4aAW2hwEkdxtRB3uPwmsSlb202PfYukK78LI_-EB5A">
+<input data-drupal-selector="edit-query-form" type="hidden" name="form_id" value="query_form">
+<div class="query-messages-status"></div>
+</form>
+
+            </div>
+          </div>
+        </li></ul></div>
+        
+        
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
