@@ -1,3 +1,0 @@
-# project
- MERN STACK
-
