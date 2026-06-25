@@ -83,17 +83,6 @@ Healthcare-Website/
 └── README.md
 ```
 
-📸 Screenshots
-
-Add screenshots of:
-
-* Home Page
-* About Page
-* Appointment Booking
-* Contact Page
-
-⸻
-
 🌱 Future Improvements
 
 * User Authentication
