@@ -1,8 +1,20 @@
-🏥 Healthcare Website
+# 🏥 Healthcare Website
 
-A full-stack healthcare web application built using the MERN Stack that allows patients to book appointments online through a clean, responsive interface. The project demonstrates modern frontend development with React and backend API development using Express.js and MongoDB.
+A full-stack healthcare web application developed as a **2-member team project** using the MERN Stack. The application enables users to book appointments online through a responsive interface while demonstrating frontend-backend integration and RESTful API development.
 
-⸻
+## 👥 Team
+
+- **Yashika Kotia**
+  - Developed the React frontend
+  - Designed responsive UI using Bootstrap
+  - Implemented appointment and contact forms
+  - Integrated frontend with backend APIs
+
+- **Pragya**
+  - Developed the Express.js backend
+  - Designed MongoDB database schema
+  - Built REST APIs
+  - Implemented server-side validation
 
 🚀 Live Demo
 
@@ -46,25 +58,30 @@ Deployment
 
 ⸻
 
-📂 Project Structure
+## 📂 Project Structure
 
-Healthcare-Website
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
+```text
+Healthcare-Website/
 │
 ├── backend/
-│   ├── server.js
+│   ├── controllers/
 │   ├── models/
 │   ├── routes/
-│   ├── controllers/
+│   ├── server.js
 │   └── package.json
 │
+├── public/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.js
+│   └── index.js
+│
+├── package.json
+├── package-lock.json
 └── README.md
-
-⸻
+```
 
 📸 Screenshots
 
@@ -88,13 +105,10 @@ Add screenshots of:
 
 ⸻
 
-👩‍💻 Author
+## 👥 Contributors
 
-Yashika Kotia
-
-* CSE Student @ IGDTUW
-* C++ | DSA | MERN Stack
-
+- **Yashika Kotia**
+- **Pragya** (GitHub: @Pragya106)
 ⸻
 
 ⭐ If you found this project helpful, consider giving it a star.
