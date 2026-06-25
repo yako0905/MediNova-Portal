@@ -100,4 +100,3 @@ Healthcare-Website/
 - **Pragya** (GitHub: @Pragya106)
 ⸻
 
-⭐ If you found this project helpful, consider giving it a star.
