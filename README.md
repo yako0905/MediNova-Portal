@@ -1,102 +1,126 @@
-# 🏥 Healthcare Website
+# MediNova Portal
 
-A full-stack healthcare web application developed as a **2-member team project** using the MERN Stack. The application enables users to book appointments online through a responsive interface while demonstrating frontend-backend integration and RESTful API development.
+A modern, responsive healthcare web application built using React.js. The project provides an intuitive interface for patients to explore healthcare services, browse doctors, schedule appointments, and manage their healthcare information.
 
-## 👥 Team
+## Live Demo
 
-- **Yashika Kotia**
-  - Developed the React frontend
-  - Designed responsive UI using Bootstrap
-  - Implemented appointment and contact forms
-  - Integrated frontend with backend APIs
+https://healthcare-portal-roan.vercel.app/
 
-- **Pragya**
-  - Developed the Express.js backend
-  - Designed MongoDB database schema
-  - Built REST APIs
-  - Implemented server-side validation
+---
 
-🚀 Live Demo
+## Features
 
-🔗 Website: https://project-healthcare-1.onrender.com/
+- Modern responsive UI
+- Home page with Hero Section
+- About Us
+- Doctor Directory
+- Doctor Details
+- Appointment Booking
+- Patient Dashboard
+- Login & Registration
+- Contact Page
+- FAQ Section
+- Testimonials
+- Statistics Section
+- Reusable React Components
+- Mobile Friendly Design
 
-⸻
+---
 
-📌 Features
+## Tech Stack
 
-* 🏥 Responsive healthcare website
-* 📅 Online appointment booking
-* 📞 Contact form with client-side validation
-* ℹ️ About Us page showcasing hospital information
-* 🔄 RESTful API built with Express.js
-* 🍃 MongoDB database integration using Mongoose
-* ✅ Form validation on both frontend and backend
-* 📱 Mobile-first responsive design
+### Frontend
+- React.js
+- React Router DOM
+- React Icons
+- CSS3
+- Framer Motion
 
-⸻
+### Development Tools
+- VS Code
+- Git
+- GitHub
+- Vercel
 
-🛠️ Tech Stack
+---
 
-Frontend
+## Project Structure
 
-* React.js
-* React Router
-* Bootstrap 5
-* HTML5
-* CSS3
-
-Backend
-
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-
-Deployment
-
-* Render
-
-⸻
-
-## 📂 Project Structure
-
-```text
-Healthcare-Website/
+```
+src/
 │
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── package.json
+├── assets/
+├── components/
+│   ├── CTA/
+│   ├── doctors/
+│   ├── FAQ/
+│   ├── hero/
+│   ├── navbar/
+│   ├── footer/
+│   ├── testimonials/
+│   ├── services/
+│   ├── Statistics/
+│   └── commons/
 │
-├── public/
-│
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── App.js
-│   └── index.js
-│
-├── package.json
-├── package-lock.json
-└── README.md
+├── data/
+├── pages/
+├── styles/
+├── utils/
+├── App.js
+└── index.js
 ```
 
-🌱 Future Improvements
+---
 
-* User Authentication
-* Admin Dashboard
-* Email Notifications
-* Online Payments
-* Patient Portal
-* Appointment History
+## Installation
 
-⸻
+Clone the repository
 
-## 👥 Contributors
+```bash
+git clone https://github.com/yako0905/healthcare-website.git
+```
 
-- **Yashika Kotia**
-- **Pragya** (GitHub: @Pragya106)
-⸻
+Navigate to the project
 
+```bash
+cd healthcare-website
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the application
+
+```bash
+npm start
+```
+
+---
+
+## Deployment
+
+The application is deployed on **Vercel**.
+
+Live Website:
+
+https://healthcare-portal-roan.vercel.app/
+
+---
+
+## Future Enhancements
+
+- Backend Integration
+- Patient Authentication
+- Doctor Authentication
+- Appointment Database
+- Payment Gateway
+- Email Notifications
+- Medical Records Management
+- Admin Dashboard
+- AI Chatbot
+- Online Video Consultation
+
+---
