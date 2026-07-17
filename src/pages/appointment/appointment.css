@@ -1,0 +1,23 @@
+.appointment-form-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.appointment-form-card {
+  width: 100%;
+  max-width: 720px;
+}
+
+.appointment-form-card__title {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-secondary);
+  margin: 0 0 var(--space-6);
+  text-align: center;
+}
+
+.appointment-form-card__submit {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-2);
+}

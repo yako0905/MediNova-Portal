@@ -1,0 +1,19 @@
+.footer-contact__heading {
+  color: var(--color-surface);
+  margin-bottom: var(--space-4);
+}
+
+.footer-contact__row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-3);
+}
+
+.footer-contact__row svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--color-accent);
+}

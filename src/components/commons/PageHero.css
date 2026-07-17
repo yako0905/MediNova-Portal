@@ -1,0 +1,28 @@
+.page-hero__inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-hero__eyebrow {
+  display: inline-block;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-surface);
+  opacity: 0.85;
+  margin-bottom: var(--space-3);
+}
+
+.page-hero__title {
+  color: var(--color-surface);
+  margin-bottom: var(--space-4);
+}
+
+.page-hero__subtitle {
+  color: var(--color-surface);
+  opacity: 0.92;
+  font-size: var(--fs-lg);
+  margin-bottom: 0;
+}

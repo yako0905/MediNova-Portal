@@ -1,0 +1,19 @@
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-xl);
+  color: var(--color-secondary);
+}
+
+.nav-logo:hover {
+  color: var(--color-secondary);
+}
+
+.nav-logo__icon {
+  display: inline-flex;
+  color: var(--color-primary);
+  font-size: var(--fs-2xl);
+}

@@ -1,0 +1,17 @@
+.card-app {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card-app--padded {
+  padding: var(--space-6);
+}
+
+.card-app--hoverable:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}

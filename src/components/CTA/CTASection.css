@@ -1,0 +1,34 @@
+.cta-section__inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-section__title {
+  margin-bottom: var(--space-4);
+}
+
+.cta-section__subtitle {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-8);
+}
+
+.cta-section__actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* Outline buttons need light borders/text when sitting on a colored
+   (--color-primary / --color-secondary) CTASection background. */
+.cta-section .btn-app--outline {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: var(--color-surface);
+}
+
+.cta-section .btn-app--outline:hover:not(:disabled) {
+  background-color: var(--color-surface);
+  border-color: var(--color-surface);
+  color: var(--color-primary);
+}

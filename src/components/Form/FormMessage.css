@@ -1,0 +1,57 @@
+.form-message {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-5);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
+}
+
+.form-message__icon {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  margin-top: 1px;
+}
+
+.form-message__body {
+  flex: 1;
+}
+
+.form-message__body h4 {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  margin: 0 0 var(--space-1);
+}
+
+.form-message__body p {
+  margin: 0;
+}
+
+.form-message--success {
+  background-color: var(--color-success-bg);
+  color: #14532D;
+}
+
+.form-message--success .form-message__icon {
+  color: var(--color-success);
+}
+
+.form-message--error {
+  background-color: var(--color-error-bg);
+  color: #7F1D1D;
+}
+
+.form-message--error .form-message__icon {
+  color: var(--color-error);
+}
+
+.form-message--info {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+
+.form-message--info .form-message__icon {
+  color: var(--color-primary);
+}

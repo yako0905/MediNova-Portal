@@ -1,0 +1,49 @@
+.section-app {
+  padding: var(--space-20) 0;
+}
+
+.section-app--tight {
+  padding: var(--space-12) 0;
+}
+
+.section-app--default {
+  background-color: var(--color-background);
+}
+
+.section-app--surface {
+  background-color: var(--color-surface);
+}
+
+.section-app--primary {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.section-app--primary h1,
+.section-app--primary h2,
+.section-app--primary h3,
+.section-app--primary p {
+  color: var(--color-surface);
+}
+
+.section-app--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-surface);
+}
+
+.section-app--secondary h1,
+.section-app--secondary h2,
+.section-app--secondary h3,
+.section-app--secondary p {
+  color: var(--color-surface);
+}
+
+@media (max-width: 768px) {
+  .section-app {
+    padding: var(--space-12) 0;
+  }
+
+  .section-app--tight {
+    padding: var(--space-8) 0;
+  }
+}

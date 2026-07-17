@@ -1,0 +1,59 @@
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-item__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  background: none;
+  border: none;
+  text-align: left;
+  padding: var(--space-5) 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-medium);
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.faq-item__chevron {
+  flex-shrink: 0;
+  font-size: var(--fs-xl);
+  color: var(--color-primary);
+  transition: transform var(--transition-base);
+}
+
+.faq-item__chevron--open {
+  transform: rotate(180deg);
+}
+
+.faq-item__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--transition-base);
+}
+
+.faq-item__panel--open {
+  grid-template-rows: 1fr;
+}
+
+.faq-item__panel > .faq-item__answer {
+  overflow: hidden;
+  min-height: 0;
+  margin: 0;
+  color: var(--color-text-muted);
+  padding-bottom: 0;
+}
+
+.faq-item__panel--open > .faq-item__answer {
+  padding-bottom: var(--space-5);
+}
+
+/* grid-template-rows transition needs the child to be a grid item that
+   can be clipped; wrap contents in a min-height:0 block */
+.faq-item__panel {
+  overflow: hidden;
+}

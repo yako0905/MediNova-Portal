@@ -1,19 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-// Components
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// Layout components
+import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 // Pages
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Appointment from './pages/Appointment';
-
-import './App.css';
+import Home from './pages/home';
+import About from './pages/about';
+import Contact from './pages/contact';
+import Appointment from './pages/appointment';
+import Doctors from './pages/doctors';
+import DoctorDetails from './pages/doctordetail';
+import Login from './pages/login';
+import Register from './pages/register';
+import Dashboard from './pages/dashboard';
 
 function App() {
   return (
@@ -26,6 +27,11 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/appointment" element={<Appointment />} />
+            <Route path="/doctors" element={<Doctors />} />
+            <Route path="/doctors/:id" element={<DoctorDetails />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </main>
         <Footer />
@@ -34,4 +40,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;

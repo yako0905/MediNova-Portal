@@ -1,0 +1,34 @@
+.navbar-app {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar-app__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+.navbar-app__desktop-links {
+  display: flex;
+}
+
+.navbar-app__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+@media (max-width: 900px) {
+  .navbar-app__desktop-links {
+    display: none;
+  }
+
+  .navbar-app__cta {
+    display: none;
+  }
+}

@@ -1,0 +1,109 @@
+.btn-app {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-pill);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.btn-app:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-app:active {
+  transform: translateY(0);
+}
+
+.btn-app:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-app__icon {
+  font-size: 1.1em;
+  flex-shrink: 0;
+}
+
+/* ---- Sizes ---- */
+.btn-app--sm {
+  font-size: var(--fs-sm);
+  padding: var(--space-2) var(--space-4);
+}
+
+.btn-app--md {
+  font-size: var(--fs-base);
+  padding: var(--space-3) var(--space-6);
+}
+
+.btn-app--lg {
+  font-size: var(--fs-lg);
+  padding: var(--space-4) var(--space-8);
+}
+
+/* ---- Variants ---- */
+.btn-app--primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.btn-app--primary:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  box-shadow: var(--shadow-md);
+  color: var(--color-surface);
+}
+
+.btn-app--accent {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-surface);
+}
+
+.btn-app--accent:hover:not(:disabled) {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  box-shadow: var(--shadow-md);
+  color: var(--color-surface);
+}
+
+.btn-app--outline {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-secondary);
+}
+
+.btn-app--outline:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-app--ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-primary);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+.btn-app--ghost:hover:not(:disabled) {
+  background-color: var(--color-primary-light);
+}
+
+/* ---- Full width ---- */
+.btn-app--full {
+  width: 100%;
+}

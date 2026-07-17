@@ -1,0 +1,17 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.service-card__title {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-xl);
+}
+
+.service-card__description {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}

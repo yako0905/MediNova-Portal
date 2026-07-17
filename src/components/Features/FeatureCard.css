@@ -1,0 +1,30 @@
+.feature-card {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.feature-card:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.feature-card .icon-badge {
+  margin-bottom: var(--space-4);
+}
+
+.feature-card__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-secondary);
+  margin: 0 0 var(--space-2);
+}
+
+.feature-card__description {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  line-height: var(--lh-normal);
+  margin: 0;
+}

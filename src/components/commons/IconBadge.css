@@ -1,0 +1,40 @@
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.icon-badge--sm {
+  width: 48px;
+  height: 48px;
+  font-size: var(--fs-xl);
+}
+
+.icon-badge--md {
+  width: 72px;
+  height: 72px;
+  font-size: var(--fs-3xl);
+}
+
+.icon-badge--lg {
+  width: 96px;
+  height: 96px;
+  font-size: var(--fs-4xl);
+}
+
+.icon-badge--primary {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.icon-badge--accent {
+  background-color: rgba(20, 184, 166, 0.14);
+  color: var(--color-accent);
+}
+
+.icon-badge--secondary {
+  background-color: rgba(15, 23, 42, 0.06);
+  color: var(--color-secondary);
+}

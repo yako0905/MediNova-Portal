@@ -1,0 +1,34 @@
+.login-form__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.login-form__row .checkbox-field {
+  margin-bottom: 0;
+}
+
+.login-form__forgot {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.login-form__divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.login-form__divider::before,
+.login-form__divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border);
+}
