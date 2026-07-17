@@ -43,4 +43,9 @@ export const importantInfo = [
   },
 ];
 
-export default { timeSlots, importantInfo };
+const appointmentInfo = {
+  timeSlots,
+  importantInfo,
+};
+
+export default appointmentInfo;

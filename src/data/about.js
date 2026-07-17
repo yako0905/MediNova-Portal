@@ -71,4 +71,10 @@ export const ourValues = [
   },
 ];
 
-export default { missionVision, whyChooseUs, ourValues };
+const about = {
+  missionVision,
+  whyChooseUs,
+  ourValues,
+};
+
+export default about;

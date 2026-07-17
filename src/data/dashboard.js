@@ -79,4 +79,10 @@ export const quickActions = [
   },
 ];
 
-export default { upcomingAppointments, medicalHistory, quickActions };
+const dashboard = {
+  upcomingAppointments,
+  medicalHistory,
+  quickActions,
+};
+
+export default dashboard;
