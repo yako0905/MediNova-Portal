@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthCard } from '../../components/auth';
 import { Button } from '../../components/commons';
 import { FormField, FormRow, Checkbox, PasswordStrengthMeter } from '../../components/Form';
+import { registerUser } from "../../services/authService";
 
 const initialFormState = {
   fullName: '',
@@ -60,15 +61,35 @@ const Register = () => {
     return nextErrors;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const nextErrors = validate();
-    setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0) return;
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    // Placeholder for real account creation — no backend wired up yet.
-    navigate('/dashboard');
-  };
+  const nextErrors = validate();
+  setErrors(nextErrors);
+
+  if (Object.keys(nextErrors).length > 0) return;
+
+  try {
+    const response = await registerUser({
+      name: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      password: formData.password,
+      role: "patient",
+    });
+
+    localStorage.setItem("token", response.data.token);
+    localStorage.setItem("user", JSON.stringify(response.data.user));
+
+    alert("Registration Successful!");
+
+    navigate("/dashboard");
+  } catch (error) {
+    alert(
+      error.response?.data?.message || "Registration failed."
+    );
+  }
+};
 
   return (
     <AuthCard

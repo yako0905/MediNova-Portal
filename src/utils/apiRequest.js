@@ -1,24 +1,34 @@
 import config from '../config/env';
 
 /**
- * Thin wrapper around fetch that prefixes the configured API URL.
- * Usage: apiRequest('/appointments', { method: 'POST', body: {...} })
+ * Wrapper around fetch that automatically:
+ * - Uses the configured API URL
+ * - Sends JSON
+ * - Includes JWT token (if logged in)
  */
-export const apiRequest = async (path, { method = 'GET', body, headers = {} } = {}) => {
+export const apiRequest = async (
+  path,
+  { method = 'GET', body, headers = {} } = {}
+) => {
+  const token = localStorage.getItem("token");
+
   const response = await fetch(`${config.apiUrl}${path}`, {
     method,
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
+      ...(token && { Authorization: `Bearer ${token}` }),
       ...headers,
     },
     body: body ? JSON.stringify(body) : undefined,
   });
 
+  const data = await response.json();
+
   if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
+    throw new Error(data.message || "Request failed");
   }
 
-  return response.json();
+  return data;
 };
 
 export default apiRequest;

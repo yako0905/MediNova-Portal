@@ -1,25 +1,31 @@
 {
-  "name": "healthcare-backend",
+  "name": "healthcare-portal-backend",
   "version": "1.0.0",
-  "description": "Express backend for healthcare website",
+  "description": "Production-ready backend for Healthcare Portal (Hospital/Clinic Management System) built with Node.js, Express.js and MongoDB",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "start:file": "node server-file-storage.js",
-    "dev": "nodemon server.js",
-    "dev:file": "nodemon server-file-storage.js"
-      },
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "healthcare",
+    "hospital",
+    "clinic",
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "body-parser": "^1.20.2"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
-  "keywords": ["healthcare", "express", "mongodb", "appointments"],
-  "author": "",
-  "license": "ISC"
-} 
+    "nodemon": "^3.1.4"
+  }
+}

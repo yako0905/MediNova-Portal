@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PageHero, Section, Card, Button } from '../../components/commons';
 import { FeatureGrid } from '../../components/Features';
 import { FormField, FormRow, FormMessage } from '../../components/Form';
@@ -6,7 +6,6 @@ import { CTASection } from '../../components/CTA';
 import { IconPhone, IconMail, IconCalendar } from '../../components/commons/icons';
 
 import { departments } from '../../data/services';
-import doctors from '../../data/doctors';
 import contactInfo from '../../data/contactInfo';
 import { timeSlots, importantInfo } from '../../data/appointmentInfo';
 import { apiRequest } from '../../utils/apiRequest';
@@ -20,8 +19,6 @@ const initialFormState = {
   date: '',
   time: '',
 };
-
-const doctorOptions = doctors.map((d) => ({ value: d.id, label: `${d.name} — ${d.specialty}` }));
 
 /**
  * Appointment
@@ -38,6 +35,7 @@ const Appointment = () => {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState(null); // null | 'success' | 'error'
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [doctorOptions, setDoctorOptions] = useState([]);
 
   const today = new Date().toISOString().split('T')[0];
 
@@ -46,6 +44,25 @@ const Appointment = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: undefined }));
   };
+
+  useEffect(() => {
+  const fetchDoctors = async () => {
+    try {
+      const response = await apiRequest("/doctors");
+
+      const options = response.data.doctors.map((doctor) => ({
+        value: doctor._id,
+        label: `${doctor.name} — ${doctor.specialization}`,
+      }));
+
+      setDoctorOptions(options);
+    } catch (error) {
+      console.error("Failed to fetch doctors:", error);
+    }
+  };
+
+  fetchDoctors();
+}, []);
 
   const validate = () => {
     const nextErrors = {};
@@ -77,7 +94,17 @@ const Appointment = () => {
     try {
       // Wired to the configurable API base URL (see src/config/env.js).
       // Falls back gracefully if no backend is running yet in dev.
-      await apiRequest('/appointments', { method: 'POST', body: formData });
+     await apiRequest('/appointments', {
+  method: 'POST',
+  body: {
+    patientName: formData.fullName,
+    phone: formData.phoneNumber,
+    department: formData.department,
+    doctor: formData.doctorId,
+    appointmentDate: formData.date,
+    appointmentTime: formData.time,
+  },
+});
       setStatus('success');
       setFormData(initialFormState);
     } catch (error) {

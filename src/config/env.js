@@ -23,10 +23,10 @@ const requiredWithFallback = (value, fallback, name) => {
 
 const config = {
   apiUrl: requiredWithFallback(
-    process.env.REACT_APP_API_URL,
-    'http://localhost:5001',
-    'REACT_APP_API_URL'
-  ),
+  process.env.REACT_APP_API_URL,
+  'http://localhost:5001/api',
+  'REACT_APP_API_URL'
+),
   env: process.env.NODE_ENV || 'development',
 };
 

@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthCard } from '../../components/auth';
 import { Button } from '../../components/commons';
 import { FormField, Checkbox, SocialAuthButtons } from '../../components/Form';
-
+import { loginUser } from "../../services/authService";
 import socialAuthProviders from '../../data/socialAuthProviders';
 import './login.css';
 
@@ -40,15 +40,32 @@ const Login = () => {
     return nextErrors;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const nextErrors = validate();
-    setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0) return;
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    // Placeholder for real authentication — no backend wired up yet.
-    navigate('/dashboard');
-  };
+  const nextErrors = validate();
+  setErrors(nextErrors);
+
+  if (Object.keys(nextErrors).length > 0) return;
+
+  try {
+    const response = await loginUser({
+      email: formData.email,
+      password: formData.password,
+    });
+
+    localStorage.setItem("token", response.data.token);
+    localStorage.setItem("user", JSON.stringify(response.data.user));
+
+    alert("Login Successful!");
+
+    navigate("/dashboard");
+  } catch (error) {
+    alert(
+      error.response?.data?.message || "Login failed."
+    );
+  }
+};
 
   return (
     <AuthCard
