@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer-app__divider" />
 
         <div className="footer-app__bottom">
-          <p className="footer-app__copyright">&copy; {year} HealthCare Center. All rights reserved.</p>
+          <p className="footer-app__copyright">&copy; {year} MediNova . All rights reserved.</p>
           <FooterSocial />
         </div>
       </Container>

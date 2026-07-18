@@ -4,11 +4,11 @@ import { IconHeartbeat } from '../commons/icons';
 import './NavLogo.css';
 
 const NavLogo = () => (
-  <Link className="nav-logo" to="/" aria-label="HealthCare Center — go to homepage">
+  <Link className="nav-logo" to="/" aria-label="MediNova — go to homepage">
     <span className="nav-logo__icon">
       <IconHeartbeat aria-hidden="true" />
     </span>
-    <span className="nav-logo__text">HealthCare Center</span>
+    <span className="nav-logo__text">MediNova</span>
   </Link>
 );
 

@@ -6,7 +6,7 @@ const FooterCompanyInfo = () => (
   <div className="footer-company">
     <div className="footer-company__brand">
       <IconHeartbeat aria-hidden="true" />
-      <span>HealthCare Center</span>
+      <span>MediNova</span>
     </div>
     <p className="footer-company__tagline">Your Health, Our Priority</p>
     <p className="footer-company__description">

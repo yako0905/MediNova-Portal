@@ -22,7 +22,7 @@ const About = () => {
     <div>
       <PageHero
         eyebrow="About Us"
-        title="About HealthCare Center"
+        title="About MediNova"
         subtitle="Dedicated to providing exceptional healthcare services with compassion and excellence since 1995."
       />
 
