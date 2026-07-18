@@ -1,126 +1,211 @@
-# MediNova Portal
+# 🏥 MediNova Portal
 
-A modern, responsive healthcare web application built using React.js. The project provides an intuitive interface for patients to explore healthcare services, browse doctors, schedule appointments, and manage their healthcare information.
+A modern full-stack healthcare appointment platform built using the **MERN Stack**. MediNova Portal enables patients to register, log in securely, browse doctors, and book appointments through a simple and responsive interface.
 
-## Live Demo
-
-https://healthcare-portal-roan.vercel.app/
+🌐 **Live Demo:** https://healthcare-portal-roan.vercel.app/
 
 ---
 
-## Features
+## ✨ Features
 
-- Modern responsive UI
-- Home page with Hero Section
-- About Us
-- Doctor Directory
-- Doctor Details
-- Appointment Booking
-- Patient Dashboard
-- Login & Registration
-- Contact Page
-- FAQ Section
-- Testimonials
-- Statistics Section
-- Reusable React Components
-- Mobile Friendly Design
+### 🔐 Authentication
+- User Registration
+- Secure Login with JWT Authentication
+- Password Hashing using bcrypt
+- Protected API Routes
+
+### 👨‍⚕️ Doctor Management
+- View available doctors
+- Dynamic doctor list from MongoDB
+- Doctor specialization and details
+
+### 📅 Appointment Booking
+- Book appointments with doctors
+- Store appointments securely in MongoDB
+- Dynamic doctor selection
+- Appointment validation
+
+### 💻 Responsive Interface
+- Modern React UI
+- Mobile-friendly design
+- Clean and intuitive navigation
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 - React.js
-- React Router DOM
-- React Icons
-- CSS3
-- Framer Motion
+- React Router
+- JavaScript (ES6+)
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- JWT Authentication
+- bcrypt
+
+### Database
+- MongoDB Atlas
+- Mongoose
+
+### Deployment
+- Vercel (Frontend)
 
 ### Development Tools
+- Git & GitHub
+- Thunder Client / Postman
 - VS Code
-- Git
-- GitHub
-- Vercel
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
-```
-src/
+```text
+MediNova-Portal/
 │
-├── assets/
-├── components/
-│   ├── CTA/
-│   ├── doctors/
-│   ├── FAQ/
-│   ├── hero/
-│   ├── navbar/
-│   ├── footer/
-│   ├── testimonials/
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── server.js
+│   └── package.json
+│
+├── src/
+│   ├── components/
+│   ├── config/
+│   ├── pages/
 │   ├── services/
-│   ├── Statistics/
-│   └── commons/
+│   ├── utils/
+│   └── App.js
 │
-├── data/
-├── pages/
-├── styles/
-├── utils/
-├── App.js
-└── index.js
+├── public/
+├── package.json
+└── README.md
 ```
 
 ---
 
-## Installation
+## 🚀 Getting Started
 
-Clone the repository
-
-```bash
-git clone https://github.com/yako0905/healthcare-website.git
-```
-
-Navigate to the project
+### 1️⃣ Clone the Repository
 
 ```bash
-cd healthcare-website
+git clone https://github.com/yako0905/MediNova-Portal.git
+cd MediNova-Portal
 ```
 
-Install dependencies
+### 2️⃣ Install Frontend Dependencies
 
 ```bash
 npm install
 ```
 
-Run the application
+### 3️⃣ Install Backend Dependencies
+
+```bash
+cd backend
+npm install
+```
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file inside the **backend** folder.
+
+```env
+PORT=5001
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+> **Note:** Never commit your `.env` file to GitHub.
+
+---
+
+## ▶️ Run the Project
+
+### Start Backend
+
+```bash
+cd backend
+npm start
+```
+
+### Start Frontend
 
 ```bash
 npm start
 ```
 
+Frontend:
+
+```
+http://localhost:3000
+```
+
+Backend:
+
+```
+http://localhost:5001
+```
+
 ---
 
-## Deployment
+## 📸 Current Features
 
-The application is deployed on **Vercel**.
-
-Live Website:
-
-https://healthcare-portal-roan.vercel.app/
+- ✅ User Authentication (Register/Login)
+- ✅ JWT Protected APIs
+- ✅ MongoDB Database Integration
+- ✅ Doctor Management
+- ✅ Appointment Booking
+- ✅ Responsive UI
+- ✅ RESTful API Architecture
 
 ---
 
-## Future Enhancements
+## 🔮 Future Enhancements
 
-- Backend Integration
-- Patient Authentication
-- Doctor Authentication
-- Appointment Database
-- Payment Gateway
-- Email Notifications
-- Medical Records Management
-- Admin Dashboard
-- AI Chatbot
-- Online Video Consultation
+- 👤 Patient Dashboard
+- 📋 My Appointments
+- ❌ Appointment Cancellation
+- 👨‍💼 Admin Dashboard
+- ✏️ Doctor Profile Management
+- 🔍 Search & Filter Doctors
+- 📧 Email Notifications
+- 💳 Online Payment Integration
+- 📄 Medical Records Management
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
 
 ---
